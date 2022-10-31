@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(217, 233, 247);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 35px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    height: 30px;
+    padding: 0 5px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;    
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.container{
+    min-height: 20vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('music.jpg');
+
+}
+
+.bottom{
+    position: sticky;
+    height: 110px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.icons i:hover{
+  color: rgb(75, 75, 240)
+}
+
+#progressBar{
+    width: 80vw;
+}
+
+.songItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+    width: 70vh;
+    color: black;
+    margin: 12px 0;
+    border-radius: 15px;
+}
+
+.songItem img{
+
+    width: 55px;
+    margin: 0 23px;
+    border-radius: 64px;
+
+}
+
+.timeStamp{
+    margin: 0 15px;
+}
+
+.timeStamp i{
+    cursor: pointer;
+}
+
+.timeStamp i:hover{
+    color: rgb(38, 38, 208)
+  }
+
+.songInfo{
+    position: absolute;
+    left: 9vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1 ease-in;
+}
